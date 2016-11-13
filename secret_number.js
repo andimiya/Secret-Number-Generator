@@ -1,21 +1,24 @@
 'use strict';
-
+// module.exports = function(){
 var secretNumberGenerator = function() {
-  var randomNumber = Math.random()*1000000;
-  var myNum = function (){
-    return randomNumber;
+  var secretNumber = Math.random()*1000000;
+  var secretNumberGenerator = function (){
+    return secretNumber;
   };
-  return myNum;
+  return secretNumberGenerator;
+// };
 };
 
 
+// var num1 = secretNumberGenerator();
 
 
 var num1 = secretNumberGenerator();
 
-// var num1 = function myNum() {
-//   return randomNumber;
-// };
+var num1 = function secretNumberGenerator() {
 
-num1(); //123
+  return secretNumber;
+};
+
+// num1(); //123
 
