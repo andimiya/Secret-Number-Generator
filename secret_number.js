@@ -1,5 +1,6 @@
 'use strict';
-module.exports = function() {
+
+var secretNumberGenerator = function() {
   var randomNumber = Math.random()*1000000;
   var myNum = function (){
     return randomNumber;
@@ -9,21 +10,12 @@ module.exports = function() {
 
 
 
-//   var secretNumber = (function (){
 
-//       var secretNumberGenerator = function(min, max) {
-//         min = Math.ceil(min);
-//         max = Math.floor(max);
-//         var secretNumber = (Math.floor(Math.random()*(max - min + 1)) + min);
-//         console.log(secretNumber);
-//         return secretNumberGenerator;
-//         return Math.floor(Math.random()*(max - min + 1)) + min;
-//       };
-//     return secretNumberGenerator;
-//   })();
+var num1 = secretNumberGenerator();
+
+// var num1 = function myNum() {
+//   return randomNumber;
 // };
 
-// var secretNumber = secretNumberGenerator();
-// var test1 = secretNumber();
-// console.log (secretNumber());
-// // console.log(secretNumber());
+num1(); //123
+
